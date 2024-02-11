@@ -42,7 +42,7 @@ jobs:
     if: github.event_name == 'push'
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Build frontend image
         run: docker build --file Dockerfile --tag $FLOWISE_IMAGE_NAME .
